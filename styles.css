@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(225, 225, 225)
+}
+
+#calculator {
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+    /* margin: 10px; */
+    width: 350px;
+    height: 90vh;
+    background-color: rgb(200, 200, 200);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;  
+}
+
+#calc-display {
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 23%;
+    background-color: rgb(236, 236, 236);
+    text-align: right;
+    padding: 10px 15px;
+}
+
+#calc-display > .display-small {
+    height: 35%;
+    border: 1px solid red;
+    font-size: 1.5rem;
+}
+
+#calc-display > .display-large {
+    height: 65%;
+    border: 1px solid green;
+    font-size: 3.2rem;
+}
+
+#calc-options {
+    height: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding: 0;
+    gap: 5px;
+}
+
+button {
+    border: 2px solid black;
+    border-radius: 4px;
+    height: 18%;
+    width: 23%;
+    font-size: larger;
+    background-color: rgb(236, 236, 236);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(211, 209, 209);
+}
+
+#option-clear,
+#option-delete {
+    width: 49%;
+}
+
+#option-clear {
+    background-color: rgb(227, 226, 155);
+}
+
+#option-clear:hover {
+    background-color: rgb(197, 196, 112);
+}
+
+#option-delete {
+    background-color: rgb(213, 126, 126);
+}
+
+#option-delete:hover {
+    background-color: rgb(194, 96, 96);
+}
